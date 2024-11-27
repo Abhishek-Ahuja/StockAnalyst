@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Analyzer</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.0.0/dist/chartjs-plugin-annotation.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+    <h1>Stock Market Analysis</h1>
+    <div class="stock-container">
+      
+        <section id="chart">
+        <canvas id="myChart">
+         
+        </canvas>
+        <div id="tooltip" class="tooltip-border" style="display: none;"></div>
+
+        <div class="btn-container">
+        <button id="1mo">1 month</button>
+        <button id="3mo">3 month</button>
+
+        <button id="1y">1 year</button>
+
+        <button id="5y">5 year</button>
+    </div>
+
+        
+      </section>
+
+
+      <section id="list"> 
+        <ul id="stock-list"></ul>
+      </section>
+
+      <section id="details">
+           
+      </section>
+
+    </div>
+    
+    <script src="script.js"></script>
+  
+  </body>
+</html>
