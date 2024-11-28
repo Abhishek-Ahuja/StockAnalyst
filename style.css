@@ -1,3 +1,140 @@
-h1{
+* {
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  body {
+    background-color: #010129;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
     color: white;
-}
+    text-align: center;
+   
+  }
+  
+  body > h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-top: 25px;
+   
+  
+  }
+  
+  .stock-container {
+    width: 90%;
+    height: 80%;
+    display: grid;
+    margin: 0 auto;
+    margin-top: 80px;
+    gap: 50px;
+    grid-template-columns: 2.5fr 1fr;
+  }
+  
+  #myChart {
+    background-color: #010145;
+    
+   
+    margin-right: 50px;
+  
+    padding-right: 50px;
+  }
+  
+  li,
+  ul {
+    list-style: none;
+  }
+  
+  ul {
+    display: grid;
+    gap: 10px;
+    align-items: start;
+    justify-content: space-between;
+  }
+  
+  ul > li {
+    display: grid;
+    gap: 10px;
+  
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+  
+  ul > li > span {
+    font-size: 1.3rem;
+  }
+  
+  .stock-btn {
+    background-color: #010145;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .stock-btn:hover {
+    background-color: #00002c;
+    cursor: pointer;
+  }
+  
+  .profit {
+    color: #86ef7a;
+  }
+  
+  .loss {
+    color: red;
+  }
+  
+  
+  #details > p{
+     margin-top: 20px ;
+     text-align: justify;
+     margin-bottom: 50px;
+  }
+  
+  .summary-header{
+    display: flex;
+    justify-content: start;
+    gap:20px ;
+    font-size: 1.6rem;
+    margin-top: 20px;
+  }
+  
+  #chart{
+    position: relative;
+    height: fit-content;
+  }
+  
+  
+  
+  .btn-container{
+   background-color: #010145;
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    padding: 10px;
+    gap:20px ; 
+    
+  }
+  
+  #tooltip{
+    margin-top: -10px;
+    padding-bottom: 10px;
+    margin-right:50px ; 
+    height: fit-content;
+    background-color: #010145;
+    
+  }
+  
+  .btn-container button {
+    background-color: #0d0d7d;
+    padding: 10px ;
+    color:  white ;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+  
+     
+   }
