@@ -2,11 +2,7 @@ let stocksData;
 let stocksStatsData;
 let stocksProfileData;
 let myLineChart;
-
-
 function createCanvas(key , duration) {
-    console.log(duration) ; 
-    console.log(stocksData[0][key]["1mo"])
   const { timeStamp, value } = stocksData[0][key][duration];
   if (myLineChart) {
     myLineChart.destroy();
@@ -119,7 +115,6 @@ async function render() {
   response = await fetch("https://stocksapi-uhe1.onrender.com/api/stocks/getstocksdata");
   data = await response.json();
   stocksData = data.stocksData;
-  console.log(stocksData) ; 
   response = await fetch("https://stocksapi-uhe1.onrender.com/api/stocks/getstocksprofiledata");
   data = await response.json();
   stocksProfileData = data.stocksProfileData;
